@@ -2,7 +2,7 @@
 <html>
     <body>
     <header>
-       <img  src="assets/img/rojas-black.png" alt="Rojas">
+       <img  src="assets/img/rojas-rosa.png" alt="Rojas" style="width:300px">
     </header>
     <div style="padding-left: 10%;
     padding-right: 10%;">
