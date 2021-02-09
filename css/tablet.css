@@ -1,0 +1,24 @@
+.container-hamburguesa .fa-bars {
+    font-size: 2rem;
+}
+.header-container-redes a {
+    font-size: 1.8rem;
+}
+.main-home h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.main-home-text p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.conatiner-projects .project {
+    width: 50%;
+    max-width: 400px;
+    background-color: var(--veige);
+    padding: 10px;
+    margin: 20px 10px;
+}
+.header-container-menu ul li a {
+    font-size: 1.5rem;
+}

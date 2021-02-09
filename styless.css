@@ -1,0 +1,430 @@
+:root{
+    --celeste: #99ced4;
+    --azul:#4abdac;
+    --celesteclaro: #e0eef8;
+    --rosa: #ee86b7;
+    --gris: #6e7376;
+    --veige:#faf8f7;
+
+}
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin: 20px 0px;
+    padding-bottom: 20px;
+    position: relative;
+}
+h2::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--celeste);
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+header{
+    max-width: 100vw;
+    height: 58px;
+    padding: 15px 0;
+    background-color: var(--rosa);
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999999;
+    display: grid;
+    grid-template-columns: 50% 30% 10%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.rojas{
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.container-hamburguesa{
+    grid-column: 3 / 4;
+    justify-self: end;
+}
+.container-hamburguesa .fa-bars{
+    color: var(--celeste);
+    font-size: 22px;
+    font-weight: bold;
+}
+.header-container-redes{
+    
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+}
+.header-container-redes a{
+    font-size: 18px;
+    color: black;
+    margin: 0 5px;
+}
+.header-container-redes a .fa-envelope:hover{
+    color: red;
+}
+.header-container-redes a .fa-github:hover{
+    color: white;
+}
+.header-container-redes a .fa-linkedin-in:hover{
+    color: #2977c9;
+    text-shadow: 0px 0px 12px white;
+}
+.header-container-menu{
+    display: none;
+}
+.header-container-menu ul li{
+    border-bottom: 1px solid var(--celeste);
+    padding: 10px 0;
+    padding-left: 5%;
+    }
+    .header-container-menu ul li:nth-child(4){
+        border-bottom: 1px solid var(--celeste);
+    }
+.header-container-menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+.header-container-menu.active{
+    display: block;
+
+    background-color: var(--azul);
+    position: fixed;
+    top: 58px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+    
+.main-home{
+    height: 100vh;
+    background-image: url(./assets/img/fondo-compu.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    padding-top:  58px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.main-home:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.main-home h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    z-index: 999;
+}
+.main-home-text{
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #201b1b;
+    z-index: 999
+}
+.main-home-text p{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.main-home-text p::after{
+    content: '|';
+    color: black;
+    font-size: 1.3rem;
+    animation: anim 9s linear;
+    animation-fill-mode: forwards;
+    text-align: center;
+}
+@keyframes anim{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/* PROYECTOS */
+
+.projects{
+    width: 100%;
+    margin: 70px auto;
+}
+.projects h2{
+    color: black;
+}
+.projects .conatiner-projects{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.conatiner-projects .project{
+    width: 90%;
+    max-width: 400px;
+    background-color: var(--veige);
+    padding: 10px;
+    margin: 20px 10px;
+}
+
+.conatiner-projects .project h2{
+    color: black;
+}
+.conatiner-projects .project h3{
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+}
+.conatiner-projects .project figure{
+    width: 100%;
+    height: 300px;
+    margin: 0px auto 20px;
+    border-radius: 5px;
+
+}
+.conatiner-projects .project figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.conatiner-projects .project p{
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+/* ABOUT */
+.about{
+    height: 100vh;
+    padding: 10px;
+    background-image: url(assets/img/codigorosa.jpg);
+    background-size: 400%;
+    background-repeat: no-repeat;
+    animation: movimiento 10s linear alternate infinite;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes movimiento{
+    0%{
+        background-position: top left;
+    }
+    100%{
+        background-position: bottom right;
+    }
+}
+.about .about-me{
+    width: 80%;
+}
+.about h2,
+.technolgies h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.about .about-p1{
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    line-height: 30px;
+}
+.technolgies{
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    
+}
+
+
+.technolgies .container-technologies{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+.technolgies .container-technologies .icons{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50%;
+    padding: 5px;
+
+    background-color: rgba(255, 255, 255, 0.589);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: relative;
+}
+.technolgies .container-technologies .html5{
+    background-image: url(assets/img/html.png);
+}
+.technolgies .container-technologies .css{
+    background-image: url(assets/img/css3.png);
+    
+}
+.technolgies .container-technologies .js{
+    background-image: url(assets/img/js.png);
+}
+.technolgies .container-technologies .git{
+    background-image: url(assets/img/git.png);
+}
+.technolgies .container-technologies .gitHub{
+    background-image: url(assets/img/github.png);
+}
+.technolgies .container-technologies .Sass{
+    background-image: url(assets/img/sass.png);
+}
+.technolgies .container-technologies .Less{
+    background-image: url(assets/img/less.png);
+}
+.technolgies .container-technologies .bootstrap{
+    background-image: url(assets/img/bootstrap.png);
+}
+.technolgies .container-technologies .icons:hover::before{
+    background-color: transparent;
+}
+.technolgies .container-technologies .icons h3{
+    display: none;
+
+    width: auto;
+    font-size: 1.5rem;
+    background-color: var(--celesteoscuro);
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    overflow: hidden;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.technolgies .container-technologies .icons:hover{
+    width: 120px;
+}
+.technolgies .container-technologies .icons:hover h3{
+    display: block;
+    background-color: var(--azul);
+}
+/* Trabajemos juntos */
+.work-together{
+    width: 100%;
+    height: calc(90vh - 50px);
+    padding:  58px 0 10px;
+    background-color: var(--azul);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 40% 30%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.work-together h2{
+    text-shadow: 0px 0px 5px black;
+}
+.work-together p {
+    width: 90%;
+    margin: 50px auto;
+    font-size: 1.2rem;
+    text-align: center;
+    
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+}
+.work-together .work-together-container-redes{
+    margin: 20px 0;
+    color: black;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.work-together .work-together-container-redes a{
+    font-size: 3.5rem;
+    margin: 0 20px;
+}
+.work-together .work-together-container-redes .fa-github{
+    color: black;
+}
+.work-together .work-together-container-redes .fa-linkedin-in{
+    color: #2977c9;
+}
+
+.work-together .work-together-container-redes .fa-envelope{
+    color: red;
+}
+footer{
+    height: 58px;
+    background-color: var(--gris);
+}
+footer p{
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 58px;
+    color: white;
+    text-shadow: 0px 0px 3px white;
+}
+@media screen and (min-width:500px){
+    .header-container-redes a {
+        font-size: 1.5rem;
+    }
+    .container-hamburguesa{
+        font-size: 1.5rem;
+    }
+    .about article{
+        height: 40%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
