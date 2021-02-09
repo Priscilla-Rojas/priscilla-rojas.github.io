@@ -1,16 +1,24 @@
-### Hi there 👋
+<!DOCTYPE html>
+<html>
+    <body>
+    <header>
+       <img  src="assets/img/rojas-black.png" alt="Rojas">
+    </header>
+    <div style="padding-left: 10%;
+    padding-right: 10%;">
+        <h4>Portfolio Priscilla Rojas Front-End Developer Jurnior </h4>
+            <p>Este portfolio, es la primera version en colores pasteles como rosa y celeste, realizado sin frameworks, ni librerias, en el cual solo</p> 
+        <h4>tecnologias aplicadas:</h4>
+        <ul>
+            <li><b>HTML</b></li>
+            <li><b>CSS</b></li>
+            <li><b>GIT</b></li>
+            <li><b>Algunos widgets</b></li>
+        </ul>
+        <br>
+        Fue hecho con mucha dedicación. Gracias por tu visita
+    </div>
+</body>
 
-<!--
-**Priscilla-Rojas/Priscilla-Rojas** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+</html>
