@@ -47,6 +47,10 @@ header .header-container-menu ul li a {
     color: white;
     border-bottom: 1px solid white;
 }
+.header-container-menu ul li a:focus{
+    color: #4abdac;
+    border-bottom: 1px solid #4abdac;
+}
 .header-container-redes{
     grid-column: 3 / 4;
     justify-self: center;
