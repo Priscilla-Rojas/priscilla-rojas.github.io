@@ -237,8 +237,8 @@ header{
 }
 /* ABOUT */
 .about{
-    height: 100vh;
-    padding: 10px;
+    height: auto;
+    padding: 60px 10px;
     background-image: url(assets/img/codigorosa.jpg);
     background-size: 400%;
     background-repeat: no-repeat;
@@ -330,12 +330,12 @@ header{
 .technolgies .container-technologies .icons h3{
     display: none;
 
-    width: auto;
+    width: 120;
     font-size: 1.5rem;
     background-color: var(--celesteoscuro);
     color: white;
     text-align: center;
-    line-height: 70px;
+    line-height: 40px;
     overflow: hidden;
 
     position: absolute;
@@ -346,7 +346,7 @@ header{
     z-index: 10;
 }
 .technolgies .container-technologies .icons:hover{
-    width: 120px;
+    width: 128px;
 }
 .technolgies .container-technologies .icons:hover h3{
     display: block;
@@ -355,18 +355,25 @@ header{
 /* Trabajemos juntos */
 .work-together{
     width: 100%;
-    height: calc(90vh - 50px);
-    padding:  58px 0 10px;
+    height: auto;
     background-color: var(--azul);
+    
+}
+.work-together .container-work-together{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 40% 30%;
+    grid-template-rows: 25% 50% 30%;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
-.work-together h2{
-    text-shadow: 0px 0px 5px black;
+.work-together .container-work-together h2{
+    text-shadow: 0px 0px 5px white;
+    color: black;
 }
 .work-together p {
     width: 90%;
