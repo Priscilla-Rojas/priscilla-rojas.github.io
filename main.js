@@ -6,7 +6,7 @@ btnMenu.addEventListener('click', (event)=>{
 });
 
 var i = 0;
-var text = 'Front-End developer trainer. Proactiva, responsable, entusiasta, curiosa y enfocada.';
+var text = 'Front-End developer. Proactiva, responsable, entusiasta, curiosa y enfocada.';
 type();
 function type(){
     if (i < text.length){
