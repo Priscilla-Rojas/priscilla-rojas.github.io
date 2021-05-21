@@ -1,5 +1,8 @@
 :root{
     --backgroun-header: white;
+    --contraste: #fa9aba;
+    --blackligth: #121111;
+    --dark-transparente:rgba(37, 35, 35, 0.431);
 
 }
 @font-face {
@@ -19,19 +22,18 @@ h2{
     text-align: center;
     font-size: 2rem;
     color: white;
-    margin: 20px 0px;
-    padding-bottom: 20px;
+    margin: 20px 0px ;
     position: relative;
 }
 h2::after{
     content: '';
     position: absolute;
     display: block;
-    width: 50px;
+    width: 100px;
     height: 3px;
-    background-color: var(--celeste);
+    background-color: var(--contraste);
     bottom: 0;
-    left: calc(50% - 25px);
+    left: calc(50% - 50px);
 }
 
 header{
@@ -103,30 +105,31 @@ header{
     background-color: rgb(253, 253, 253);
 }
 .header-container-menu ul li:first-child{
-    border-top: 1px solid #d87093;
+    border-top: 1px solid var(--dark-transparente);
     
 }
 .header-container-menu ul li{
-    border-bottom: 1px solid #d87093;
+    border-bottom: 1px solid var(--dark-transparente);
     padding: 5px 0;
     padding-left: 5%;
+    background-color: var(--contraste);
 }
 .header-container-menu ul li a{
     font-size: 1rem;
-    color: black;
+    color: white;
 }
 .header-container-menu ul li:hover{
-    background-color: palevioletred;
+    background-color: var(--backgroun-header);
 }
 .header-container-menu ul li:hover a{
-    color: white;
-    border-bottom: 1px solid white;
+    color: black;
+    border-bottom: 1px solid black;
     font-size: 1.2rem;
 }
 .header-container-menu.active{
     display: block;
 
-    background-color: var(--azul);
+    background-color: var(--contraste);
     position: fixed;
     top: 50px;
     left: 0;
@@ -139,7 +142,6 @@ header{
     background-image: url(./assets/img/fondo-compu.png);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
     padding-top:  58px;
@@ -206,7 +208,8 @@ header{
 
 .projects{
     width: 100%;
-    margin: 70px auto;
+    margin: 20px auto;
+    padding: 40px 0 0;
 }
 .projects h2{
     color: black;
@@ -221,36 +224,31 @@ header{
 .conatiner-projects .project{
     width: 90%;
     max-width: 400px;
-    background-color: var(--veige);
-    padding: 10px;
-    margin: 20px 10px;
     position: relative;
     overflow: hidden;
 }
 .conatiner-projects .project .ver{
-        background-color: rgba(37, 35, 35, 0.431);
-        padding: 30px;
-        
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: -50px;
-        bottom: 450px;
-
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-
-        opacity: 0;
-        visibility: hidden;
-        transition: all .8s linear;
-    }
-    .conatiner-projects .project:hover > .ver{
-        opacity: 1;
-        visibility: visible;
-        top: 0;
-        bottom: 0;
+    background-color: var(--dark-transparente);
+    padding: 30px;
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.9s linear;
+}
+.conatiner-projects .project:hover > .ver{
+    opacity: 1;
+    visibility: visible;
+    /* top: 0;
+    bottom: 0; */
 }
 .conatiner-projects .project .ver a{
     font-size: 1rem;
@@ -259,7 +257,7 @@ header{
     border-radius: 20px;
     color: white;
     margin: 5px;
-    background-color: #d87093;
+    background-color: var(--contraste);
 }
 .conatiner-projects .project .ver a:hover{
     text-decoration: underline;
@@ -288,6 +286,11 @@ header{
     width: 100%;
     height: 100%;
     object-fit: contain;
+    transition: all 0.8s linear;
+}
+
+.conatiner-projects .project:hover > .contenido > figure > img{
+    transform: scale(1.2);
 }
 .conatiner-projects .project p{
     font-size: 1rem;
@@ -297,24 +300,18 @@ header{
 /* ABOUT */
 .about{
     height: auto;
-    padding: 60px 10px;
-    background-color: #d87093;
+    padding: 60px 10px 20px;
+    background-color: var(--blackligth);
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-}
-@keyframes movimiento{
-    0%{
-        background-position: top left;
-    }
-    100%{
-        background-position: bottom right;
-    }
+
 }
 .about .about-me{
     width: 80%;
+    margin-bottom: 20px;
 }
 .about h2,
 .technolgies h2{
@@ -342,26 +339,49 @@ header{
     justify-content: center;
     align-content: center;
 }
+.technolgies .container-technologies .container-technologies-section div,
+.technolgies .container-technologies .container-technologies-section{
+    display: flex;
+    flex-flow: row  wrap;
+    justify-content: center;
+    align-items: center;
+}   
+.technolgies .container-technologies .container-technologies-section{
+    width: 100%;
+    background-color: var(--dark-transparente);
+    margin: 5px 1px;
+    
+}
+.technolgies .container-technologies .container-technologies-section div{
+    width: 100%;
+    justify-content: space-evenly;
+}
+.technolgies .container-technologies .container-technologies-section h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 10px 10px 0;
+    text-transform: none;
+}
+.technolgies .container-technologies .container-technologies-section h2::after{
+    background-color: transparent;
+}
 .technolgies .container-technologies .icons{
     width: 20%;
-    min-width: 90px;
+    min-width: 60px;
     max-width: 120px;
     height: auto;
-    margin: 10px 5px;
     border-radius: 5%;
-    padding: 10px 0 0;
-    overflow: hidden;
+    padding: 15px 0 20px;
+    /* overflow: hidden; */
     transition: all 1s linear;
-
-    background-color: rgba(255, 255, 255, 0.589);   
+    position: relative;
 }
 .technolgies .container-technologies .icons i{
     display: block;
     text-align: center;
     font-size: 4rem;
     color: rgb(53, 53, 53);
-    padding: 10px;
-    margin: 2px auto;
+    padding: 1px 10px;
 }
 .technolgies .container-technologies .icons h3{
     width: 100%;
@@ -376,13 +396,46 @@ header{
     visibility: hidden;
     opacity: 0;
     transition: all .8s linear;
+    position: absolute;
+
+    bottom: 0;
 }
-.technolgies .container-technologies .icons:hover  h3{
+.technolgies .container-technologies .icons:hover h3{
     
     opacity: 1;
     visibility: visible;
     transform: translateY(0px);
-    background-color: #db0049;
+}
+.technolgies .container-technologies .html5:hover i{
+    color:rgb(255, 123, 75);
+}
+.technolgies .container-technologies .css:hover i{
+    color:royalblue;
+}
+.technolgies .container-technologies .js:hover i{
+    color:yellow;
+}
+.technolgies .container-technologies .Sass:hover i{
+    color:palevioletred;
+}
+.technolgies .container-technologies .Less:hover i{
+    color:rgb(51, 215, 230);
+}
+.technolgies .container-technologies .git:hover i{
+    color: orangered;
+}
+.technolgies .container-technologies .gitHub:hover i{
+    color:black;
+    text-shadow: 0 0 2px gray;
+}
+.technolgies .container-technologies .wordpress:hover i{
+    color:#00749c;
+}
+.technolgies .container-technologies .bootstrap:hover i{
+    color:rgb(86, 61, 124);
+}
+.technolgies .container-technologies .bootstrap:hover i{
+    color:rgb(157, 75, 195);
 }
 /* Trabajemos juntos */
 .work-together{
@@ -449,7 +502,7 @@ footer p{
     font-size: 1.3rem;
     text-align: center;
     line-height: 58px;
-    background-color: rgba(126, 124, 124, 0.835);
+    background-color: var(--blackligth);
     color: white;
 }
 @media screen and (min-width:500px){
@@ -465,6 +518,7 @@ footer p{
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-
     }
+    .technolgies .container-technologies .container-technologies-section {
+        width: 49%;
 }
