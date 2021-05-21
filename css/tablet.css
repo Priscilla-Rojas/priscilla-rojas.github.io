@@ -75,6 +75,9 @@ header .header-container-menu ul li a {
     font-size: 1.5rem;
     font-weight: 500;
 }
+.about .about-me{
+    width: 80%;
+}
 .conatiner-projects .project {
     width: 50%;
     max-width: 400px;
