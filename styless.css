@@ -458,7 +458,6 @@ header{
 .work-together .container-work-together h2{
     text-shadow: 0px 0px 5px white;
     color: black;
-    font-size: 1.8rem;
 }
 .work-together p {
     width: 90%;
@@ -518,9 +517,6 @@ footer p{
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-    }
-    .work-together .container-work-together h2{
-        font-size: 2rem;
     }
     .work-together .container-work-together{
         width: 85%;
