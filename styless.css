@@ -444,9 +444,9 @@ header{
     
 }
 .work-together .container-work-together{
-    width: 80%;
+    width: 100%;
     margin: auto;
-    padding: 20px;
+    padding: 20px 2px;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -458,6 +458,7 @@ header{
 .work-together .container-work-together h2{
     text-shadow: 0px 0px 5px white;
     color: black;
+    font-size: 1.8rem;
 }
 .work-together p {
     width: 90%;
@@ -518,6 +519,11 @@ footer p{
         justify-content: center;
         align-items: center;
     }
-    .technolgies .container-technologies .container-technologies-section {
-        width: 49%;
+    .work-together .container-work-together h2{
+        font-size: 2rem;
+    }
+    .work-together .container-work-together{
+        width: 85%;
+        
+    }
 }
