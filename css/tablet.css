@@ -7,18 +7,20 @@
 
 header{
     padding: 0 90px;
-    grid-template-columns: 25% 65% 20%;
+    grid-template-columns: 15% 65% 20%;
 }
 .header-container-menu{
-    display: block;
-
+    position: relative;
+}
+.header-container-menu{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    top: 0;
+    left: 0;
+    opacity: 1;
 }
 header .header-container-redes a {
     font-size: 1.4rem;
-}
-header .header-container-menu ul{
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
 }
 .header-container-menu ul li:first-child{
     border-top: none;
