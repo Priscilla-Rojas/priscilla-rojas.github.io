@@ -327,6 +327,20 @@ header{
     font-size: 1.1rem;
     line-height: 30px;
 }
+.about .about-me .download-cv{
+    color: white;
+    font-size: 1.4rem;
+    background-color: var(--dark-transparente);
+    margin: 10px auto;
+    padding: 10px 15px ;
+    border-radius: 10px;
+}
+.about .about-me .download-cv:hover{
+    color: black;
+    background-color: var(--contraste);
+    box-shadow: inset 0px 0px 10px rgb(97, 97, 97);
+    box-shadow: unset 0px 0px 10px rgb(252, 252, 252);
+}
 
 .technolgies{
     width: 95%;
