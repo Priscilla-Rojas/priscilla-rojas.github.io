@@ -258,12 +258,16 @@ header{
     display: inline-block;
     padding: 10px 20px;
     border-radius: 20px;
-    color: white;
+    color: black;
+    font-weight: 400;
     margin: 5px;
     background-color: var(--contraste);
+    box-shadow: inset 0px 0px 5px rgb(97, 97, 97);
+    box-shadow: unset 0px 0px 10px rgb(252, 252, 252);
 }
 .conatiner-projects .project .ver a:hover{
     text-decoration: underline;
+    font-weight: 500;
     font-size: 1.2rem;
 }
 
@@ -417,11 +421,9 @@ header{
     opacity: 0;
     transition: all .8s linear;
     position: absolute;
-
     bottom: 0;
 }
 .technolgies .container-technologies .icons:hover h3{
-    
     opacity: 1;
     visibility: visible;
     transform: translateY(0px);
