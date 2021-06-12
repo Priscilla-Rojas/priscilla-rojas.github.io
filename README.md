@@ -2,12 +2,12 @@
 <html>
     <body>
     <header>
-       <img  src="assets/img/rojas-rosa.png" alt="Rojas" style="max-width: 300px;">
+       <!-- <img  src="assets/img/" alt="Rojas" style="max-width: 300px;"> -->
     </header>
     <div style="padding-left: 10%;
     padding-right: 10%;">
         <h4>Portfolio Priscilla Rojas Front-End Developer Jurnior </h4>
-            <p>Este portfolio, es la primera version en colores pasteles como rosa y celeste, realizado sin frameworks, ni librerias.</p> 
+            <p>Este portfolio, es la primera version de mi protfolio realizado en codigo nativo, sin frameworks, ni librerias.</p> 
         <h4>tecnologias aplicadas:</h4>
         <ul>
             <li><b>HTML</b></li>
