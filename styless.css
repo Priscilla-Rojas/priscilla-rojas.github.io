@@ -521,7 +521,7 @@ footer{
     background-color: var(--gris);
 }
 footer p{
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
     line-height: 58px;
     background-color: var(--blackligth);
