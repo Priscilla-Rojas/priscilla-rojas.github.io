@@ -15,7 +15,7 @@
             <li><b>JAVASCRIPT</b></li>
         </ul>
         <br>
-        <p> Lo puedes ver en <a href="https://priscilla-rojas.github.io/">Priscilla Rojas</<></p>
+        <p> Lo puedes ver en <a href="https://priscilla-rojas.github.io/" target="_blanc">Priscilla Rojas</a></p>
         Fue hecho con mucha dedicación y amor. Gracias por tu visita
     </div>
 </body>
